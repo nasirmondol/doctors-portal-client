@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section style={{
             background: `url(${background})`,
-            backgroudnSize: 'cover'
+            backgroundSize: 'cover'
         }} className='App m-5'>
             <div className='text-center'>
                 <p className='text-white text-xl mt-8'>Contact us</p>
