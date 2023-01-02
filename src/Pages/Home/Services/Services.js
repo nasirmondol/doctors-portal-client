@@ -43,13 +43,13 @@ const Services = () => {
                     ></Service>)
                 }
             </div>
-            <div class="hero min-h-screen bg-base-200 mt-5">
-                <div class="hero-content flex-col lg:flex-row px-12">
-                    <img src={child} class="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero min-h-screen bg-base-200 mt-5">
+                <div className="hero-content flex-col lg:flex-row px-12">
+                    <img src={child} className="max-w-sm rounded-lg shadow-2xl" />
                     <div className='p-5'>
-                        <h1 class="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
-                        <p class="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto, doloremque beatae ipsam magnam quis nemo et atque quisquam dolorem suscipit incidunt sequi alias praesentium enim optio ipsa! Quo, natus!</p>
-                        <button class="btn btn-primary uppercase text-white text-bold bg-gradient-to-r from-secondary to-primary">Get Started</button>
+                        <h1 className="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
+                        <p className="py-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto, doloremque beatae ipsam magnam quis nemo et atque quisquam dolorem suscipit incidunt sequi alias praesentium enim optio ipsa! Quo, natus!</p>
+                        <button className="btn btn-primary uppercase text-white text-bold bg-gradient-to-r from-secondary to-primary">Get Started</button>
                     </div>
                 </div>
             </div>

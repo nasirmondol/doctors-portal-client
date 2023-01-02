@@ -2,7 +2,7 @@ import React from 'react';
 
 const Exeptional = () => {
     return (
-        <div class="">
+        <div className="">
             
         </div>
     );
