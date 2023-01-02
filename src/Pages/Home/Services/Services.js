@@ -30,12 +30,12 @@ const Services = () => {
     ]
 
     return (
-        <div>
+        <div className='px-12 mb-20'>
             <div className='text-center mt-20'>
                 <h3 className='text-xl text-primary font-bold uppercase'>Our services</h3>
                 <h1 className='text-3xl mb-5'>Services we provide</h1>
             </div>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-10'>
                 {
                     services1.map(service => <Service
                         key={service._id}
@@ -44,7 +44,7 @@ const Services = () => {
                 }
             </div>
             <div class="hero min-h-screen bg-base-200 mt-5">
-                <div class="hero-content flex-col lg:flex-row">
+                <div class="hero-content flex-col lg:flex-row px-12">
                     <img src={child} class="max-w-sm rounded-lg shadow-2xl" />
                     <div className='p-5'>
                         <h1 class="text-5xl font-bold">Exceptional Dental Care, on Your Terms</h1>
