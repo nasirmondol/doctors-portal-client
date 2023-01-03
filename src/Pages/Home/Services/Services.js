@@ -16,13 +16,13 @@ const Services = () => {
             description: 'We provide our service properly in time and we do not disrespect to patient',
         },
         {
-            _id: 1,
+            _id: 2,
             name: "Cavity Filling",
             img: cavity,
             description: 'We provide our service properly in time and we do not disrespect to patient'
         },
         {
-            _id: 1,
+            _id: 3,
             name: "Teeth Whitening",
             img: whitening,
             description: 'We provide our service properly in time and we do not disrespect to patient'
