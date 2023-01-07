@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,11 +40,11 @@ const Login = () => {
         <div className='flex h-screen justify-center items-center'>
             <div className="card w-96 bg-white shadow-xl">
                 <div className="card-body">
-                    <h2 className="text-center text-2xl font-bold">Login</h2>
+                    <h2 className="text-center text-2xl font-bold text-black">Login</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <div class="form-control w-full max-w-xs">
                             <label class="label">
-                                <span class="label-text">Eamil</span>
+                                <span class="label-text text-black">Email</span>
                             </label>
                             <input 
                             type="email" 
@@ -68,7 +69,7 @@ const Login = () => {
                         </div>
                         <div class="form-control w-full max-w-xs">
                             <label class="label">
-                                <span class="label-text">Password</span>
+                                <span class="label-text text-black">Password</span>
                             </label>
                             <input 
                             type="password" 
@@ -93,8 +94,9 @@ const Login = () => {
                         </div>
                         <p>{signInError}</p>
                         <input className='btn w-full max-w-xs text-white' type="submit" value="LOGIN" />
+                        <p><small><div className='text-black'>New to doctors portal?</div> <Link className='text-primary' to="/signup">Create an Account</Link></small></p>
                     </form>
-                    <div className="divider">OR</div>
+                    <div className="divider text-black">OR</div>
                     <button onClick={() => signInWithGoogle()} class="text-secondary btn btn-outline uppercase">Continue with google</button>
 
                 </div>
