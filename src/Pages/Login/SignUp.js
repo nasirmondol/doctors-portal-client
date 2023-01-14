@@ -22,7 +22,7 @@ const SignUp = () => {
 
 
     if (gUser || user) {
-        console.log(user, gUser)
+        navigate('/')
     }
     let signInError;
 

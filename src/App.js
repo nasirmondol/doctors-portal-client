@@ -7,6 +7,8 @@ import Login from './Pages/Login/Login';
 import Appointment from './Pages/Appointment/Appointment';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
+import Main from './Layout/Main';
+import DashboardLayOut from './Layout/DashboardLayOut';
 
 function App() {
   return (
@@ -26,6 +28,11 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/signup' element={<SignUp />}></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <DashboardLayOut></DashboardLayOut>
+          </RequireAuth>
+        }></Route>
       </Routes>
     </div>
   );
